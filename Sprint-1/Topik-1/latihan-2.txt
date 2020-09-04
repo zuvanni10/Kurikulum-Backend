@@ -1,0 +1,18 @@
+baca tm.uts.uas
+skor = (tm * 0,2) (uts * 0,3) (uas * 0,5)
+jika (skor <65 & skor> = 20) MAKA
+grade = d
+lain jika (skor <70) lalu
+grade = c
+lain jika (skor <75) lalu
+grade = b-
+lain jika (skor <80) lalu
+grade = b
+lain jika (skor <85) lalu
+grade = b
+lain jika (skor <90) lalu
+grade = a-
+lain jika (skor <100) lalu
+grade = a
+Cetak nilai skor
+akhir
