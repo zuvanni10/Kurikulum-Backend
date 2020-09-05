@@ -1,0 +1,1 @@
+karena perintah "which" adalah perintah untuk menampilkan direktori.
