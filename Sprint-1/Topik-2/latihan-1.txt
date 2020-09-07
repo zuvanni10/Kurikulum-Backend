@@ -1,0 +1,47 @@
+1. var_dump($d + $e);
+   
+   menjumlahkan variabel
+   
+2. var_dump($e == $f);
+  
+   mengembalikan nilai true karena nilainya sama.
+
+
+3. var_dump($e === $f);
+
+   mengembalikan nilai false karena tipe tidak sama.
+
+
+4. var_dump($g);
+   
+   mengembalikan nilai variabel.
+
+
+5. var_dump((bool)$g);
+
+   mengembalikan nilai false karena tidak memiliki bilangan.
+
+
+6. var_dump((int)$g);
+
+   false mengubah boolean menjadi integer akan mengeluarkan nilai 0.
+
+
+7. var_dump(true && false);
+
+   && Jika bernilai true & false maka akan keluar nilai false.
+
+
+8. var_dump(true || false);
+
+   Jika salah satu nilai dari variabel berbeda maka akan keluar nilai true.
+
+
+9. var_dump(false || false);
+
+   mengembalikan nilai true karena nilainya sama.
+
+
+10. var_dump(!false);
+
+   akan menampilkan true karena menggunakan operator NOT dan nilai dari variabel adalah false.
