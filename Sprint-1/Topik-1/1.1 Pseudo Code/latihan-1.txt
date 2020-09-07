@@ -1,0 +1,29 @@
+1. Pada menu kita pilih File
+2. lalu pilih New
+3. lalu pilih lalu pilih Blank Document
+4. ketikan teks yang ingin ditulis
+5. Klik save / CTRL + S
+6. pilih ekstensi
+7. Keluar
+
+SET word = true
+SET fileBaru = true
+SET batasKata = 1000
+
+JIKA word = true
+  TAMPILKAN pesan lanjut
+LAINNYA
+  TAMPILKAN pesan install terlebih dahulu
+  
+AKHIR JIKA
+
+
+JIKA batasKata > 1000
+  TAMPILKAN pesan batas terlampaui
+ AKHIR JIKA
+ 
+
+JIKA fileBaru = true
+  LAKUKAN pembuatan file baru
+LAINNYA
+  LAKUKAN pembaruan file
