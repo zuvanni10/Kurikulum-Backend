@@ -39,7 +39,7 @@
 
 9. var_dump(false || false);
 
-   mengembalikan nilai true karena nilainya sama.
+   mengembalikan nilai false karena nilainya sama.
 
 
 10. var_dump(!false);

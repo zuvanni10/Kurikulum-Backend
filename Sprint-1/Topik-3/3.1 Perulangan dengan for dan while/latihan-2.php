@@ -1,8 +1,11 @@
 <?php
 
-for ($i = 1; $i <= 9; $i++) {
-    for ($j = 1; $j <= 9; $j++) {
-        echo "(" . $i . "," . $j .") ";
+for ($z=1; $z < 9; $z++) { 
+    if ($z%2 == 0) {
+        continue;
+    } else {
+        echo $Z . ", ";
+    
     }
-    echo "<br>";
 }
+?>
