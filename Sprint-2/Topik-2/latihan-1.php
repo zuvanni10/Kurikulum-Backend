@@ -1,7 +1,12 @@
 <?php
 
 class bangunRuang {
-
+    public function __construct() {
+	echo "----------\n";
+	echo "   Rumus  \n";
+	echo "----------\n";
+    }
+	
     public static function persegiPanjang($p, $l, $rumus) {
         if ($rumus == 'luas') {
             return $p*$l;
