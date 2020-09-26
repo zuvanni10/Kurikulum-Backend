@@ -27,7 +27,7 @@ class ConnectPdo {
     }
 
     public function insert(){
-        echo " Masukan Data";
+        echo " Masukan Data\n";
         echo "===============\n\n";
 
         echo "Masukan Data yang ingin dimasukan : ";
@@ -61,10 +61,25 @@ class ConnectPdo {
         echo "Input Nilai : ";
         $nilai = trim(fgets(STDIN));
 
-        $sql = "UPDATE Data SET nama = '".$nama."', nilai=".$nilai." WHERE id_santri=".$id.";";
-        $stm = $this->conn->prepare($sql);
-        $stm->execute();
+        $query = "UPDATE Data SET nama = '".$nama."', nilai=".$nilai." WHERE =".$id;
+        $show = $this->conn->prepare($query);
+        $show->execute();
 
         print_r($this->select());
+    }
+
+    public function delete(){
+        echo "\n DELETE \n";
+        echo "===============\n\n";
+        print_r($this->select());
+        echo "\Data yang ingin di delete : ";
+        $id = trim(fgets(STDIN));
+
+        $query = "DELETE FROM Data WHERE nama=".$id;
+        $show = $this->conn->prepare($query);
+        $show->execute();
+
+        print_r($this->select());
+    }
 
 }
